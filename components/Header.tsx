@@ -27,7 +27,7 @@ const Header = () => {
         <span className="absolute top-1 right-0 w-4 h-4 text-center text-white bg-red-600 rounded-full text-[11px]">
           {cartValue}
         </span>
-        <CgShoppingCart className="w-7 h-7" />
+        <Link href={"/cart"}><CgShoppingCart className="w-7 h-7" /></Link>
       </div>
     </nav>
   );

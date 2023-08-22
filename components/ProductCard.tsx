@@ -47,13 +47,13 @@ const ProductCard = () => {
     >
       <section
         className={
-          "flex flex-row justify-around gap-x-3 gap-y-7 flex-wrap w-full"
+          "flex flex-row justify-evenly gap-y-7 flex-wrap w-full"
         }
       >
         {data.map((product: any) => {
           return (
             <div
-              className={"cursor-pointer min-w-md flex flex-col gap-2"}
+              className={"cursor-pointer min-w-md flex flex-col gap-2 place-self-start"}
               key={product._id}
             >
               <Image
@@ -62,7 +62,7 @@ const ProductCard = () => {
                 height={100}
                 width={150}
               />
-              <h2 className={"font-semibold text-xl"}>{product.title}</h2>
+              <h2 className={"font-semibold text-xl w-40"}>{product.title}</h2>
               <label className={"font-semibold text-lg text-gray-500"}>
                 {product.subTitle}
               </label>
