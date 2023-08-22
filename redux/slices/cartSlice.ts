@@ -19,6 +19,7 @@ const cartSlice = createSlice({
     reducers: {
         addToCart: (state, action: PayloadAction<{ product: any, quantity: number }>) => {
             state.totalQuantity += action.payload.quantity;
+            console.log(action.payload.quantity)
         },
         removeFromCart: (state, action: PayloadAction<any>) => {
             state.totalQuantity -= action.payload.totalQuantity;
