@@ -13,7 +13,7 @@ const Header = () => {
       <div className="">
         <ul className="flex flex-row text-2xl gap-x-6">
           <li>
-            <Link href={"#"}>Home</Link>
+            <Link href={"/"}>Home</Link>
           </li>
           <li>
             <Link href={"/about/"}>About us</Link>
